@@ -3,7 +3,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$RepoUrl = "https://github.com/nazmulhasina228-ux/prime.git",
+    [string]$RepoUrl = "https://github.com/primebro69/prime.git",
     [string]$Token = "",
     [string]$CommitMessage = "feat: release Prime Autonomous AI Platform v1.0.0 (82 Specialist Agents, Deliberation Engine, Universal Adapters)"
 )

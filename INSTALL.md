@@ -10,13 +10,13 @@ Run this single command in your terminal to automatically detect your environmen
 
 ### On Windows (PowerShell):
 ```powershell
-irm https://raw.githubusercontent.com/nazmulhasina228-ux/prime/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/primebro69/prime/main/install.ps1 | iex
 ```
 *(If running locally inside a cloned repository: `powershell -ExecutionPolicy Bypass -File .\install.ps1`)*
 
 ### On macOS / Linux (Bash):
 ```bash
-curl -fsSL https://raw.githubusercontent.com/nazmulhasina228-ux/prime/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/primebro69/prime/main/install.sh | bash
 ```
 *(If running locally inside a cloned repository: `./install.sh`)*
 
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/nazmulhasina228-ux/prime/main/insta
 If you are already inside **Google Antigravity**, **Claude Code**, **Cursor**, **Windsurf**, or **Roo Code**, simply paste this instruction to your AI assistant:
 
 ```text
-Please install the Prime Autonomous AI Platform into this workspace from https://github.com/nazmulhasina228-ux/prime
+Please install the Prime Autonomous AI Platform into this workspace from https://github.com/primebro69/prime
 Execute the installer:
 powershell -ExecutionPolicy Bypass -File .\scripts\prime-install.ps1 -TargetWorkspace "."
 ```
@@ -43,7 +43,7 @@ For users of Anthropic's **Claude Code** CLI:
 
 ### From GitHub:
 ```bash
-claude plugin install nazmulhasina228-ux/prime
+claude plugin install primebro69/prime
 ```
 
 ### From Local Directory:
@@ -78,7 +78,7 @@ If you prefer full control by cloning the repository:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/nazmulhasina228-ux/prime.git
+git clone https://github.com/primebro69/prime.git
 cd prime
 
 # 2. Run the automated installer

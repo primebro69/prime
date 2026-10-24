@@ -63,13 +63,13 @@ Prime installs in seconds via automated, deterministic scripts.
 
 #### Windows (PowerShell):
 ```powershell
-irm https://raw.githubusercontent.com/nazmulhasina228-ux/prime/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/primebro69/prime/main/install.ps1 | iex
 ```
 *(Or inside a cloned repo: `powershell -ExecutionPolicy Bypass -File .\install.ps1`)*
 
 #### macOS / Linux (Bash):
 ```bash
-curl -fsSL https://raw.githubusercontent.com/nazmulhasina228-ux/prime/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/primebro69/prime/main/install.sh | bash
 ```
 *(Or inside a cloned repo: `./install.sh`)*
 
@@ -80,7 +80,7 @@ curl -fsSL https://raw.githubusercontent.com/nazmulhasina228-ux/prime/main/insta
 If you are already inside **Cursor**, **Claude Code**, **Windsurf**, or **Antigravity**, simply paste this instruction to your AI assistant:
 
 ```text
-Please install the Prime Autonomous AI Platform into this workspace from https://github.com/nazmulhasina228-ux/prime
+Please install the Prime Autonomous AI Platform into this workspace from https://github.com/primebro69/prime
 Execute the workspace installer:
 powershell -ExecutionPolicy Bypass -File .\scripts\prime-install.ps1 -TargetWorkspace "."
 ```
@@ -90,7 +90,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\prime-install.ps1 -TargetWork
 ### Method 3: Claude Code CLI Plugin
 
 ```bash
-claude plugin install nazmulhasina228-ux/prime
+claude plugin install primebro69/prime
 ```
 
 ---

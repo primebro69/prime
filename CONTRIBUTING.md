@@ -31,7 +31,7 @@ You can contribute to Prime in several high-impact areas:
 
 ### 2. Fork & Clone
 ```bash
-git clone https://github.com/nazmulhasina228-ux/prime.git
+git clone https://github.com/primebro69/prime.git
 cd prime
 ```
 
