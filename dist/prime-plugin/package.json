@@ -1,0 +1,27 @@
+{
+  "name": "@prime/plugin",
+  "version": "1.0.0",
+  "description": "Prime Autonomous AI Platform: Unified engineering harness combining 69 specialist agents, TDD & Superpowers discipline, dual-axis review, browser automation, and 3,000+ curated skills.",
+  "main": "bin/prime.js",
+  "bin": {
+    "prime": "./bin/prime.js"
+  },
+  "scripts": {
+    "validate": "node scripts/prime-validate.js",
+    "route": "node scripts/prime-router.js",
+    "search": "node scripts/prime-search.js"
+  },
+  "keywords": [
+    "prime",
+    "claude-plugin",
+    "codex-plugin",
+    "antigravity-plugin",
+    "agents",
+    "skills",
+    "tdd",
+    "code-review",
+    "orchestrator"
+  ],
+  "author": "Prime AI Engineering",
+  "license": "MIT"
+}

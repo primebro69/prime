@@ -1,0 +1,29 @@
+---
+description: "Prime Master Autonomous Engineering Protocol. Enforces /prime command routing, Iron Law TDD, deep module seams, and multi-agent deliberation."
+globs: "*"
+alwaysApply: true
+---
+
+# Prime Autonomous AI Protocol (Cursor Rules)
+
+Whenever `/prime` is invoked or any non-trivial engineering task is executed:
+
+## 1. Intent Triage & Lead Specialization
+Route the task to its optimal discipline:
+- **TDD & Bug Fixes**: Strict 4-phase investigation (`superpowers`).
+- **Language Compiler & Build Resolvers**: Python, TypeScript, Rust, Go, Java, Flutter (`ECC`).
+- **Code Review**: Dual-axis pass (Standards vs Spec) without cross-masking (`agent-peer-review`).
+- **UI/UX Excellence**: Curated dark modes, Outfit/Inter fonts, micro-interactions (`awesome-claude-plugins`).
+- **Browser Automation**: CDP accessibility-tree snapshots & visual proofs (`agent-browser`).
+
+## 2. The Iron Law of TDD
+```
+NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST
+```
+1. Write minimal test showing missing feature or bug.
+2. Confirm test fails (RED).
+3. Write minimal code to pass (GREEN).
+4. Refactor cleanly with clean seams.
+
+## 3. Command Manual
+Consult [COMMANDS.md](../../COMMANDS.md) for 80+ ready-to-use commands across all use cases.

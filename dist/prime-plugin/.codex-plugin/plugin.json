@@ -1,0 +1,41 @@
+{
+  "name": "prime",
+  "version": "1.0.0",
+  "description": "Prime Autonomous AI Platform: Unified engineering harness combining 69 specialist agents, TDD & Superpowers discipline, dual-axis review, browser automation, and 3,000+ curated skills for OpenAI Codex.",
+  "author": {
+    "name": "Prime AI Engineering",
+    "url": "https://github.com/prime-agentic/prime"
+  },
+  "homepage": "https://prime.agentic",
+  "repository": "https://github.com/prime-agentic/prime",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "prime",
+    "agents",
+    "skills",
+    "tdd",
+    "code-review",
+    "architecture",
+    "security"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/codex-hooks.json",
+  "interface": {
+    "displayName": "Prime",
+    "shortDescription": "Unified autonomous AI engineering platform with 69 specialist agents, TDD, and 3,000+ skills.",
+    "longDescription": "Prime is an enterprise-grade autonomous engineering harness for OpenAI Codex, Claude Code, and Google Antigravity. It unifies 69 specialist agents, TDD rigor, deep module architecture, dual-axis review, browser automation, and 3,000+ curated skills into one single slash command: /prime.",
+    "developerName": "Prime AI Engineering",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use /prime to analyze this project, identify its problems, and implement the necessary fixes.",
+      "Use /prime to implement features with strict test-driven development.",
+      "Use /prime to perform a dual-axis code review against specs and repository standards."
+    ]
+  }
+}

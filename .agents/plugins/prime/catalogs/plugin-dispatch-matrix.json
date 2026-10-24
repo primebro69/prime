@@ -1,0 +1,241 @@
+{
+  "version": "1.0.0",
+  "name": "Prime Multi-Plugin Dynamic Dispatch Matrix",
+  "description": "Deterministic routing matrix assigning user engineering objectives to the best-in-class specialized plugin.",
+  "plugins": {
+    "superpowers": {
+      "name": "superpowers",
+      "source": "obra/superpowers",
+      "bestFor": [
+        "Test-Driven Development (TDD)",
+        "Systematic Bug Debugging & Root Cause Analysis",
+        "Deterministic Verification Before Completion",
+        "Deep Module Seam Design & Refactoring",
+        "Subagent Parallel Collaboration",
+        "Structured Implementation Plans"
+      ],
+      "triggers": [
+        "tdd",
+        "test",
+        "bug",
+        "debug",
+        "fix",
+        "root cause",
+        "failing test",
+        "verify",
+        "refactor",
+        "unit test",
+        "integration test"
+      ],
+      "roleInPrime": "Execution Discipline & Iron Law TDD Engine",
+      "coreSkills": [
+        "test-driven-development",
+        "systematic-debugging",
+        "verification-before-completion",
+        "codebase-design",
+        "brainstorming",
+        "subagent-driven-development"
+      ],
+      "executionProtocol": "1. Brainstorm -> 2. Root cause / Failing test (Iron Law) -> 3. Minimal code -> 4. Deterministic verification before completion."
+    },
+    "ECC": {
+      "name": "ECC (Everything Claude Code)",
+      "source": "affaan-m/ECC",
+      "bestFor": [
+        "Specialist Agent Network (69 Agents)",
+        "Language-Specific Build & Error Resolvers (Python, Rust, Go, TS, Java, Kotlin, Swift, Flutter, C++, C#, Django, FastAPI)",
+        "Complex Enterprise System Architecture",
+        "Full-Stack Blueprints & Build Sequence Planning",
+        "Production Code Audits & Deep Exploration"
+      ],
+      "triggers": [
+        "architecture",
+        "system design",
+        "build error",
+        "compiler error",
+        "python",
+        "rust",
+        "golang",
+        "typescript",
+        "react",
+        "vue",
+        "flutter",
+        "dart",
+        "swift",
+        "java",
+        "kotlin",
+        "cpp",
+        "csharp",
+        "django",
+        "fastapi"
+      ],
+      "roleInPrime": "Specialist Agent Harness & Multi-Language Deep Intelligence",
+      "coreAgents": [
+        "code-architect",
+        "code-reviewer",
+        "planner",
+        "build-error-resolver",
+        "silent-failure-hunter",
+        "security-reviewer",
+        "performance-optimizer"
+      ],
+      "executionProtocol": "1. Codebase exploration -> 2. Architecture blueprint -> 3. Specialized language resolver -> 4. Quality gate."
+    },
+    "agent-peer-review": {
+      "name": "agent-peer-review",
+      "source": "jcputney/agent-peer-review",
+      "bestFor": [
+        "Symmetric Blind-Pass Dual-AI Peer Review",
+        "Independent Multi-Perspective Issue Debate",
+        "Adversarial Security & Architecture Validation",
+        "Dual-Axis Standards & Spec Compliance"
+      ],
+      "triggers": [
+        "review",
+        "peer review",
+        "audit",
+        "pr review",
+        "pull request",
+        "diff",
+        "spec check",
+        "standards check",
+        "second opinion"
+      ],
+      "roleInPrime": "Dual-Axis & Adversarial Validation Engine",
+      "coreSkills": [
+        "code-review",
+        "codex-peer-review"
+      ],
+      "executionProtocol": "1. Round 0: Blind independent pass -> 2. Canonicalize findings -> 3. Per-issue stance debate -> 4. Converged synthesis."
+    },
+    "claude-mem": {
+      "name": "claude-mem",
+      "source": "thedotmack/claude-mem",
+      "bestFor": [
+        "Cross-Session Persistent Memory",
+        "Context Retention & Decision History",
+        "Transcript Observation & State Tracking",
+        "Project Architecture Memory"
+      ],
+      "triggers": [
+        "remember",
+        "recall",
+        "previous session",
+        "history",
+        "context",
+        "what did we decide",
+        "session state",
+        "long running"
+      ],
+      "roleInPrime": "Persistent Memory & Context Continuity Vault",
+      "coreSkills": [
+        "unified-memory",
+        "session-resume"
+      ],
+      "executionProtocol": "1. Query historical decision log -> 2. Inject context -> 3. Execute task -> 4. Persist newly verified conclusions."
+    },
+    "agent-browser": {
+      "name": "agent-browser",
+      "source": "vercel-labs/agent-browser",
+      "bestFor": [
+        "Fast Native CDP Browser Automation",
+        "Accessibility-Tree Snapshot Inspection (@eN refs)",
+        "End-to-End Web QA & Exploratory Bug Hunts",
+        "Web Scraping, Form Automation, & Visual Verification",
+        "Electron App Desktop Automation"
+      ],
+      "triggers": [
+        "browser",
+        "web test",
+        "website",
+        "click",
+        "fill form",
+        "screenshot",
+        "scrape",
+        "ui test",
+        "e2e",
+        "electron",
+        "frontend qa"
+      ],
+      "roleInPrime": "Autonomous Browser & Visual Verification Engine",
+      "coreSkills": [
+        "agent-browser"
+      ],
+      "executionProtocol": "1. Start browser session -> 2. Snapshot accessibility tree -> 3. Interact via element refs (@eN) -> 4. Capture screenshot proof."
+    },
+    "agents-md": {
+      "name": "agents-md",
+      "source": "agentsmd/agents.md",
+      "bestFor": [
+        "Universal AGENTS.md Standard & Governance",
+        "Agent-Native Conventions & Guidelines",
+        "Repository Rules & Instruction Boundaries"
+      ],
+      "triggers": [
+        "governance",
+        "rules",
+        "agents.md",
+        "project standard",
+        "repository convention",
+        "instruction standard"
+      ],
+      "roleInPrime": "Workspace Governance & Repository Standard Enforcer",
+      "coreRules": [
+        "prime-standards.md",
+        "quality-gate.md"
+      ],
+      "executionProtocol": "1. Parse repo guidelines -> 2. Verify boundary integrity -> 3. Enforce standards across all subagents."
+    },
+    "awesome-claude-plugins": {
+      "name": "awesome-claude-plugins",
+      "source": "quemsah/awesome-claude-plugins",
+      "bestFor": [
+        "Top 100 AI Plugins Catalog & Benchmarks",
+        "Karpathy LLM Engineering Principles",
+        "World-Class UI/UX Design Standards (UI/UX Pro Max, Impeccable)",
+        "Crypto Trading & Exchange Standard Tooling (CCXT)"
+      ],
+      "triggers": [
+        "ui/ux",
+        "design",
+        "aesthetic",
+        "frontend beauty",
+        "dark mode",
+        "karpathy",
+        "crypto",
+        "trading",
+        "ccxt",
+        "top tools"
+      ],
+      "roleInPrime": "Aesthetics, LLM Benchmarks & Domain Reference Consultant",
+      "coreSkills": [
+        "awesome-plugins-guide"
+      ],
+      "executionProtocol": "1. Consult top 100 library -> 2. Select industry-standard patterns -> 3. Implement with pixel-perfect aesthetics."
+    },
+    "agentic-awesome-skills": {
+      "name": "agentic-awesome-skills & antigravity-awesome-skills",
+      "source": "sickn33/agentic-awesome-skills & benjaminasterA/antigravity-awesome-skills",
+      "bestFor": [
+        "Universal 3,000+ Skills Catalog Search",
+        "Niche Tool & Library Specialization (Docker, AWS, K8s, Redis, Three.js, etc.)",
+        "Dynamic Capability Extension"
+      ],
+      "triggers": [
+        "find skill",
+        "search skill",
+        "how do i do",
+        "is there a tool",
+        "niche library",
+        "docker",
+        "kubernetes",
+        "aws"
+      ],
+      "roleInPrime": "Universal Knowledge & Skill Discovery Library",
+      "coreSkills": [
+        "find-skills"
+      ],
+      "executionProtocol": "1. Search local 3,000+ JSON indices -> 2. Rank by relevance and install count -> 3. Load or recommend runbook."
+    }
+  }
+}

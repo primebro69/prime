@@ -1,0 +1,7 @@
+# Aider & OpenCode Configuration — Prime Autonomous Platform
+read:
+  - AGENTS.md
+  - COMMANDS.md
+auto-commits: false
+attribute-author: false
+attribute-committer: false

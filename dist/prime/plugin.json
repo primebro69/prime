@@ -1,0 +1,24 @@
+﻿{
+    "version":  "1.0.0",
+    "name":  "prime",
+    "keywords":  [
+                     "prime",
+                     "autonomous-agent",
+                     "tdd",
+                     "code-review",
+                     "architecture",
+                     "skills"
+                 ],
+    "description":  "Master autonomous AI engineering platform. Unified harness with 69 specialist agents, TDD rigor, and 3,000+ skills. Entry point: /prime",
+    "suggestedPrompts":  [
+                             "/prime Analyze this project, identify its problems, and implement the necessary fixes.",
+                             "/prime Build a comprehensive test suite for this module using strict TDD",
+                             "/prime Run a dual-axis code review on the latest changes",
+                             "/prime Test the web UI using agent-browser",
+                             "/prime Find skills for my project"
+                         ],
+    "author":  {
+                   "name":  "Prime AI Engineering"
+               },
+    "displayName":  "Prime"
+}

@@ -1,0 +1,658 @@
+﻿[
+    {
+        "name":  "a11y-architect",
+        "file":  "a11y-architect.md",
+        "description":  "Accessibility Architect specializing in WCAG 2.2 compliance for Web and Native platforms. Use PROACTIVELY when designing UI components, establishing design systems, or auditing code for inclusive user experiences.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob"
+    },
+    {
+        "name":  "agent-evaluator",
+        "file":  "agent-evaluator.md",
+        "description":  "Evaluates agent output against 5-axis quality rubric (accuracy, completeness, clarity, actionability, conciseness). Use after any non-trivial task when the user wants a quality assessment, or when the agent-self-evaluation skill is active. Produces structured scorecard with evidence and improvement suggestions.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "agent-factory",
+        "file":  "agent-factory.md",
+        "description":  "Autonomous on-demand agent generator and factory. Analyzes user requirements, codebases, frameworks, and skills to dynamically synthesize, configure, and register new specialist agents at runtime.",
+        "domain":  "orchestration",
+        "model":  "opus",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "agent-mediator",
+        "file":  "agent-mediator.md",
+        "description":  "Multi-Agent Deliberation \u0026 Debate Mediator. Orchestrates structured group discussions, adversarial cross-examination, and consensus synthesis among specialist agents to deliver balanced, resilient technical decisions.",
+        "domain":  "general",
+        "model":  "opus",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "api-architect",
+        "file":  "api-architect.md",
+        "description":  "REST \u0026 GraphQL API Design Specialist. Designs production-grade APIs enforcing RESTful naming, cursor pagination, idempotent mutations, RFC 7807 problem details, and rate limiting patterns.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "architect",
+        "file":  "architect.md",
+        "description":  "Software architecture specialist for system design, scalability, and technical decision-making. Use PROACTIVELY when planning new features, refactoring large systems, or making architectural decisions.",
+        "domain":  "architecture",
+        "model":  "opus",
+        "tools":  "Read, Grep, Glob"
+    },
+    {
+        "name":  "backend-architect",
+        "file":  "backend-architect.md",
+        "description":  "Backend Systems \u0026 Service Specialist. Designs scalable Node.js, Express, Next.js API routes, and distributed backend architectures with robust error boundaries, connection pooling, and deep modular services.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "browser-automator",
+        "file":  "browser-automator.md",
+        "description":  "Browser Automation \u0026 Web QA Specialist. Interacts with web applications via native Rust Chrome CDP, inspects accessibility trees with compact @eN element refs, and captures visual regression proof.",
+        "domain":  "automation",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "build-error-resolver",
+        "file":  "build-error-resolver.md",
+        "description":  "Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "chief-of-staff",
+        "file":  "chief-of-staff.md",
+        "description":  "Personal communication chief of staff that triages email, Slack, LINE, and Messenger. Classifies messages into 4 tiers (skip/info_only/meeting_info/action_required), generates draft replies, and enforces post-send follow-through via hooks. Use when managing multi-channel communication workflows.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash, Edit, Write"
+    },
+    {
+        "name":  "code-architect",
+        "file":  "code-architect.md",
+        "description":  "Designs feature architectures by analyzing existing codebase patterns and conventions, then providing implementation blueprints with concrete files, interfaces, data flow, and build order.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "code-explorer",
+        "file":  "code-explorer.md",
+        "description":  "Deeply analyzes existing codebase features by tracing execution paths, mapping architecture layers, and documenting dependencies to inform new development.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob"
+    },
+    {
+        "name":  "code-reviewer",
+        "file":  "code-reviewer.md",
+        "description":  "Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "code-simplifier",
+        "file":  "code-simplifier.md",
+        "description":  "Simplifies and refines code for clarity, consistency, and maintainability while preserving behavior. Focus on recently modified code unless instructed otherwise.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "codex-peer-reviewer",
+        "file":  "codex-peer-reviewer.md",
+        "description":  "Use this agent to run peer review validation with Codex CLI. Dispatches to a separate context to keep the main conversation clean. Returns synthesized peer review results.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "- Bash(codex exec*)"
+    },
+    {
+        "name":  "comment-analyzer",
+        "file":  "comment-analyzer.md",
+        "description":  "Analyze code comments for accuracy, completeness, maintainability, and comment rot risk.",
+        "domain":  "general",
+        "model":  "haiku",
+        "tools":  "Read, Grep, Glob"
+    },
+    {
+        "name":  "container-architect",
+        "file":  "container-architect.md",
+        "description":  "Docker \u0026 Container Infrastructure Specialist. Designs hardened multi-stage Dockerfiles, distroless and non-root runtime environments, robust Docker Compose local orchestrations, and CI container test harnesses.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "conversation-analyzer",
+        "file":  "conversation-analyzer.md",
+        "description":  "Use this agent when analyzing conversation transcripts to find behaviors worth preventing with hooks. Triggered by /hookify without arguments.",
+        "domain":  "general",
+        "model":  "haiku",
+        "tools":  "Read, Grep"
+    },
+    {
+        "name":  "cpp-build-resolver",
+        "file":  "cpp-build-resolver.md",
+        "description":  "C++ build, CMake, and compilation error resolution specialist. Fixes build errors, linker issues, and template errors with minimal changes. Use when C++ builds fail.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "cpp-reviewer",
+        "file":  "cpp-reviewer.md",
+        "description":  "Expert C++ code reviewer specializing in memory safety, modern C++ idioms, concurrency, and performance. Use for all C++ code changes. MUST BE USED for C++ projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "crypto-trading-architect",
+        "file":  "crypto-trading-architect.md",
+        "description":  "Algorithmic Crypto \u0026 Trading Systems Specialist. Implements unified CCXT exchange integrations, order routing, WebSocket ticker feeds, risk limits, and automated trading bot architectures.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "csharp-reviewer",
+        "file":  "csharp-reviewer.md",
+        "description":  "Expert C# code reviewer specializing in .NET conventions, async patterns, security, nullable reference types, and performance. Use for all C# code changes. MUST BE USED for C# projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "dart-build-resolver",
+        "file":  "dart-build-resolver.md",
+        "description":  "Dart/Flutter build, analysis, and dependency error resolution specialist. Fixes `dart analyze` errors, Flutter compilation failures, pub dependency conflicts, and build_runner issues with minimal, surgical changes. Use when Dart/Flutter builds fail.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "database-migration-specialist",
+        "file":  "database-migration-specialist.md",
+        "description":  "Database Migration \u0026 Schema Architect. Designs zero-downtime database migrations, backward-compatible dual-writes, PostgreSQL/MySQL lock-safe DDL, and deterministic rollback scripts across Prisma, Drizzle, Kysely, and raw SQL.",
+        "domain":  "data",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "database-reviewer",
+        "file":  "database-reviewer.md",
+        "description":  "PostgreSQL database specialist for query optimization, schema design, security, and performance. Use PROACTIVELY when writing SQL, creating migrations, designing schemas, or troubleshooting database performance. Incorporates Supabase best practices.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "django-build-resolver",
+        "file":  "django-build-resolver.md",
+        "description":  "Django/Python build, migration, and dependency error resolution specialist. Fixes pip/Poetry errors, migration conflicts, import errors, Django configuration issues, and collectstatic failures with minimal changes. Use when Django setup or startup fails.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "django-reviewer",
+        "file":  "django-reviewer.md",
+        "description":  "Expert Django code reviewer specializing in ORM correctness, DRF patterns, migration safety, security misconfigurations, and production-grade Django practices. Use for all Django code changes. MUST BE USED for Django projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "docs-lookup",
+        "file":  "docs-lookup.md",
+        "description":  "When the user asks how to use a library, framework, or API or needs up-to-date code examples, use Context7 MCP to fetch current documentation and return answers with examples. Invoke for docs/API/setup questions.",
+        "domain":  "general",
+        "model":  "haiku",
+        "tools":  "Read, Grep, mcp__context7__resolve-library-id, mcp__context7__query-docs"
+    },
+    {
+        "name":  "doc-updater",
+        "file":  "doc-updater.md",
+        "description":  "Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Generates docs/CODEMAPS/*, updates READMEs and guides. Backs the /update-codemaps and /update-docs commands.",
+        "domain":  "general",
+        "model":  "haiku",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "e2e-runner",
+        "file":  "e2e-runner.md",
+        "description":  "End-to-end testing specialist using Vercel Agent Browser (preferred) with Playwright fallback. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work.",
+        "domain":  "testing",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "fastapi-reviewer",
+        "file":  "fastapi-reviewer.md",
+        "description":  "Reviews FastAPI applications for async correctness, dependency injection, Pydantic schemas, security, OpenAPI quality, testing, and production readiness.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "flutter-reviewer",
+        "file":  "flutter-reviewer.md",
+        "description":  "Flutter and Dart code reviewer. Reviews Flutter code for widget best practices, state management patterns, Dart idioms, performance pitfalls, accessibility, and clean architecture violations. Library-agnostic â€” works with any state management solution and tooling.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "fsharp-reviewer",
+        "file":  "fsharp-reviewer.md",
+        "description":  "Expert F# code reviewer specializing in functional idioms, type safety, pattern matching, computation expressions, and performance. Use for all F# code changes. MUST BE USED for F# projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "gan-evaluator",
+        "file":  "gan-evaluator.md",
+        "description":  "\"GAN Harness â€” Evaluator agent. Tests the live running application via Playwright, scores against rubric, and provides actionable feedback to the Generator.\"",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Bash, Grep, Glob, mcp__playwright__browser_navigate, mcp__playwright__browser_click, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_snapshot, mcp__playwright__browser_type, mcp__playwright__browser_fill_form"
+    },
+    {
+        "name":  "gan-generator",
+        "file":  "gan-generator.md",
+        "description":  "\"GAN Harness â€” Generator agent. Implements features according to the spec, reads evaluator feedback, and iterates until quality threshold is met.\"",
+        "domain":  "orchestration",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "gan-planner",
+        "file":  "gan-planner.md",
+        "description":  "\"GAN Harness â€” Planner agent. Expands a one-line prompt into a full product specification with features, sprints, evaluation criteria, and design direction.\"",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Grep, Glob"
+    },
+    {
+        "name":  "go-build-resolver",
+        "file":  "go-build-resolver.md",
+        "description":  "Go build, vet, and compilation error resolution specialist. Fixes build errors, go vet issues, and linter warnings with minimal changes. Use when Go builds fail.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "go-reviewer",
+        "file":  "go-reviewer.md",
+        "description":  "Expert Go code reviewer specializing in idiomatic Go, concurrency patterns, error handling, and performance. Use for all Go code changes. MUST BE USED for Go projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "governance-auditor",
+        "file":  "governance-auditor.md",
+        "description":  "Repository Governance \u0026 Instruction Boundary Specialist. Audits repository compliance against AGENTS.md, GEMINI.md, system boundaries, rule hierarchies, and prompt defense baselines.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "graphql-federation-architect",
+        "file":  "graphql-federation-architect.md",
+        "description":  "Specialist in Apollo GraphQL Federation, subgraph entity schemas, and Apollo Router latency optimization",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "harmonyos-app-resolver",
+        "file":  "harmonyos-app-resolver.md",
+        "description":  "HarmonyOS application development expert specializing in ArkTS and ArkUI. Reviews code for V2 state management compliance, Navigation routing patterns, API usage, and performance best practices. Use for HarmonyOS/OpenHarmony projects.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "harness-optimizer",
+        "file":  "harness-optimizer.md",
+        "description":  "Improve local agent-harness configuration reliability and cost using eval-driven grading (pass@k/pass^k) derived from the eval-harness skill.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash, Edit"
+    },
+    {
+        "name":  "healthcare-reviewer",
+        "file":  "healthcare-reviewer.md",
+        "description":  "Reviews healthcare application code for clinical safety, CDSS accuracy, PHI compliance, and medical data integrity. Specialized for EMR/EHR, clinical decision support, and health information systems.",
+        "domain":  "review",
+        "model":  "opus",
+        "tools":  "Read, Grep, Glob"
+    },
+    {
+        "name":  "homelab-architect",
+        "file":  "homelab-architect.md",
+        "description":  "Designs home and small-lab network plans from hardware inventory, goals, and operator experience level, with safe staged changes and rollback guidance.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Grep"
+    },
+    {
+        "name":  "java-build-resolver",
+        "file":  "java-build-resolver.md",
+        "description":  "Java/Maven/Gradle build, compilation, and dependency error resolution specialist. Automatically detects Spring Boot or Quarkus and applies framework-specific fixes. Fixes build errors, Java compiler errors, and Maven/Gradle issues with minimal changes. Use when Java builds fail.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "java-reviewer",
+        "file":  "java-reviewer.md",
+        "description":  "Expert Java code reviewer for Spring Boot and Quarkus projects. Automatically detects the framework and applies the appropriate review rules. Covers layered architecture, JPA/Panache, MongoDB, security, and concurrency. MUST BE USED for all Java code changes.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "kotlin-build-resolver",
+        "file":  "kotlin-build-resolver.md",
+        "description":  "Kotlin/Gradle build, compilation, and dependency error resolution specialist. Fixes build errors, Kotlin compiler errors, and Gradle issues with minimal changes. Use when Kotlin builds fail.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "kotlin-reviewer",
+        "file":  "kotlin-reviewer.md",
+        "description":  "Kotlin and Android/KMP code reviewer. Reviews Kotlin code for idiomatic patterns, coroutine safety, Compose best practices, clean architecture violations, and common Android pitfalls.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "loop-operator",
+        "file":  "loop-operator.md",
+        "description":  "Operate autonomous agent loops, monitor progress, and intervene safely when loops stall.",
+        "domain":  "orchestration",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash, Edit"
+    },
+    {
+        "name":  "marketing-agent",
+        "file":  "marketing-agent.md",
+        "description":  "Marketing strategist and copywriter for campaign planning, audience research, positioning, copy creation, and content review. Covers landing pages, email sequences, social posts, ad copy, short-form video scripts, and content calendars. Use when the user wants to plan or execute a product launch or marketing campaign.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, WebSearch, WebFetch"
+    },
+    {
+        "name":  "memory-architect",
+        "file":  "memory-architect.md",
+        "description":  "Cross-Session Persistent Memory Specialist. Manages long-term project context, architectural decision retention, session compaction, and continuous learning patterns across multi-day engineering workflows.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "mle-reviewer",
+        "file":  "mle-reviewer.md",
+        "description":  "Production machine-learning engineering reviewer for data contracts, feature pipelines, training reproducibility, offline/online evaluation, model serving, monitoring, and rollback. Use when ML, MLOps, model training, inference, feature store, or evaluation code changes.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "network-architect",
+        "file":  "network-architect.md",
+        "description":  "Designs enterprise or multi-site network architecture from requirements, using existing network skills for focused routing, validation, automation, and troubleshooting detail.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Grep"
+    },
+    {
+        "name":  "network-config-reviewer",
+        "file":  "network-config-reviewer.md",
+        "description":  "Reviews router and switch configurations for security, correctness, stale references, risky change-window commands, and missing operational guardrails.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep"
+    },
+    {
+        "name":  "network-troubleshooter",
+        "file":  "network-troubleshooter.md",
+        "description":  "Diagnoses network connectivity, routing, DNS, interface, and policy symptoms with a read-only OSI-layer workflow and evidence-backed root cause summary.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Bash, Grep"
+    },
+    {
+        "name":  "opensource-forker",
+        "file":  "opensource-forker.md",
+        "description":  "Fork any project for open-sourcing. Copies files, strips secrets and credentials (20+ patterns), replaces internal references with placeholders, generates .env.example, and cleans git history. First stage of the opensource-pipeline skill.",
+        "domain":  "general",
+        "model":  "haiku",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "opensource-packager",
+        "file":  "opensource-packager.md",
+        "description":  "Generate complete open-source packaging for a sanitized project. Produces CLAUDE.md, setup.sh, README.md, LICENSE, CONTRIBUTING.md, and GitHub issue templates. Makes any repo immediately usable with Claude Code. Third stage of the opensource-pipeline skill.",
+        "domain":  "general",
+        "model":  "haiku",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "opensource-sanitizer",
+        "file":  "opensource-sanitizer.md",
+        "description":  "Verify an open-source fork is fully sanitized before release. Scans for leaked secrets, PII, internal references, and dangerous files using 20+ regex patterns. Generates a PASS/FAIL/PASS-WITH-WARNINGS report. Second stage of the opensource-pipeline skill. Use PROACTIVELY before any public release.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "performance-optimizer",
+        "file":  "performance-optimizer.md",
+        "description":  "Performance analysis and optimization specialist. Use PROACTIVELY for identifying bottlenecks, optimizing slow code, reducing bundle sizes, and improving runtime performance. Profiling, memory leaks, render optimization, and algorithmic improvements.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "php-reviewer",
+        "file":  "php-reviewer.md",
+        "description":  "Expert PHP code reviewer specializing in PSR-12 compliance, PHP type system, Eloquent ORM patterns, security, and performance. Use for all PHP code changes. MUST BE USED for PHP projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "planner",
+        "file":  "planner.md",
+        "description":  "Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks.",
+        "domain":  "architecture",
+        "model":  "opus",
+        "tools":  "Read, Grep, Glob"
+    },
+    {
+        "name":  "pr-test-analyzer",
+        "file":  "pr-test-analyzer.md",
+        "description":  "Review pull request test coverage quality and completeness, with emphasis on behavioral coverage and real bug prevention.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "python-reviewer",
+        "file":  "python-reviewer.md",
+        "description":  "Expert Python code reviewer specializing in PEP 8 compliance, Pythonic idioms, type hints, security, and performance. Use for all Python code changes. MUST BE USED for Python projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "pytorch-build-resolver",
+        "file":  "pytorch-build-resolver.md",
+        "description":  "PyTorch runtime, CUDA, and training error resolution specialist. Fixes tensor shape mismatches, device errors, gradient issues, DataLoader problems, and mixed precision failures with minimal changes. Use when PyTorch training or inference crashes.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "rag-pipeline-reviewer",
+        "file":  "rag-pipeline-reviewer.md",
+        "description":  "Reviews RAG (Retrieval-Augmented Generation) pipelines for retrieval quality, chunking strategy, embedding choices, and evaluation coverage. Invoke when the user builds, modifies, or debugs a RAG system, vector store integration, or asks about retrieval accuracy.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "react-build-resolver",
+        "file":  "react-build-resolver.md",
+        "description":  "Diagnose and fix React build failures across Vite, webpack, Next.js, CRA, Parcel, esbuild, and Bun. Handles JSX/TSX compile errors, hydration mismatches, server/client component boundary failures, missing types, and bundler-specific configuration issues with minimal, surgical changes. MUST BE USED when a React build fails.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "react-reviewer",
+        "file":  "react-reviewer.md",
+        "description":  "Expert React/JSX code reviewer specializing in hook correctness, render performance, server/client component boundaries, accessibility, and React-specific security. Use for any change touching .tsx/.jsx files or React component logic. MUST BE USED for React projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "refactor-cleaner",
+        "file":  "refactor-cleaner.md",
+        "description":  "Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "rust-build-resolver",
+        "file":  "rust-build-resolver.md",
+        "description":  "Rust build, compilation, and dependency error resolution specialist. Fixes cargo build errors, borrow checker issues, and Cargo.toml problems with minimal changes. Use when Rust builds fail.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "rust-reviewer",
+        "file":  "rust-reviewer.md",
+        "description":  "Expert Rust code reviewer specializing in ownership, lifetimes, error handling, unsafe usage, and idiomatic patterns. Use for all Rust code changes. MUST BE USED for Rust projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "seam-architect",
+        "file":  "seam-architect.md",
+        "description":  "Deep Module \u0026 Seam Architecture Specialist. Evaluates code complexity, eliminates shallow modules, locates real points of variation for seams, and conducts the Deletion Test to ensure modular depth.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "security-reviewer",
+        "file":  "security-reviewer.md",
+        "description":  "Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "seo-specialist",
+        "file":  "seo-specialist.md",
+        "description":  "SEO specialist for technical SEO audits, on-page optimization, structured data, Core Web Vitals, and content/keyword mapping. Use for site audits, meta tag reviews, schema markup, sitemap and robots issues, and SEO remediation plans.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, WebSearch, WebFetch"
+    },
+    {
+        "name":  "silent-failure-hunter",
+        "file":  "silent-failure-hunter.md",
+        "description":  "Review code for silent failures, swallowed errors, bad fallbacks, and missing error propagation.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "spec-miner",
+        "file":  "spec-miner.md",
+        "description":  "Extracts behavioral specs from existing codebases for OpenSpec. Produces flat Requirement and Invariant blocks with structured metadata (entities, enforced, id, test anchors). Outputs openspec/specs/\u003ccapability\u003e/spec.md. Fully self-bootstrapping â€” no dependency on codebase-onboarding. Use when onboarding a brownfield project to spec-driven development.",
+        "domain":  "general",
+        "model":  "opus",
+        "tools":  "Read, Grep, Glob, Bash, Write"
+    },
+    {
+        "name":  "swift-build-resolver",
+        "file":  "swift-build-resolver.md",
+        "description":  "Swift/Xcode build, compilation, and dependency error resolution specialist. Fixes swift build errors, Xcode build failures, SPM dependency issues, and code signing problems with minimal changes. Use when Swift builds fail.",
+        "domain":  "debugging",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep, Glob"
+    },
+    {
+        "name":  "swift-reviewer",
+        "file":  "swift-reviewer.md",
+        "description":  "Expert Swift code reviewer specializing in protocol-oriented design, value semantics, ARC memory management, Swift Concurrency, and idiomatic patterns. Use for all Swift code changes. MUST BE USED for Swift projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "tdd-guide",
+        "file":  "tdd-guide.md",
+        "description":  "Test-Driven Development specialist enforcing write-tests-first methodology. Use PROACTIVELY when writing new features, fixing bugs, or refactoring code. Ensures 80%+ test coverage.",
+        "domain":  "testing",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Bash, Grep"
+    },
+    {
+        "name":  "type-design-analyzer",
+        "file":  "type-design-analyzer.md",
+        "description":  "Analyze type design for encapsulation, invariant expression, usefulness, and enforcement.",
+        "domain":  "general",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob"
+    },
+    {
+        "name":  "typescript-reviewer",
+        "file":  "typescript-reviewer.md",
+        "description":  "Expert TypeScript/JavaScript code reviewer specializing in type safety, async correctness, Node/web security, and idiomatic patterns. Use for all TypeScript and JavaScript code changes. MUST BE USED for TypeScript/JavaScript projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    },
+    {
+        "name":  "ui-ux-designer",
+        "file":  "ui-ux-designer.md",
+        "description":  "World-Class UI/UX \u0026 Design Systems Specialist. Enforces curated modern aesthetics, HSL color palettes, sophisticated dark modes, typography (Inter/Outfit), fluid micro-animations, and anti-ugly design standards.",
+        "domain":  "architecture",
+        "model":  "sonnet",
+        "tools":  "Read, Write, Edit, Grep, Glob, Bash"
+    },
+    {
+        "name":  "vue-reviewer",
+        "file":  "vue-reviewer.md",
+        "description":  "Expert Vue.js code reviewer specializing in Composition API correctness, reactivity pitfalls, component architecture, template security, and Vue-specific performance. Use for any change touching .vue, .ts/.js files with Vue imports, or Vue ecosystem code (Pinia, Vue Router, Nuxt). MUST BE USED for Vue projects.",
+        "domain":  "review",
+        "model":  "sonnet",
+        "tools":  "Read, Grep, Glob, Bash"
+    }
+]

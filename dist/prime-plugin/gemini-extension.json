@@ -1,0 +1,9 @@
+﻿{
+    "author":  {
+                   "name":  "Prime AI Engineering"
+               },
+    "description":  "Master autonomous AI engineering platform",
+    "name":  "prime",
+    "version":  "1.0.0",
+    "displayName":  "Prime"
+}

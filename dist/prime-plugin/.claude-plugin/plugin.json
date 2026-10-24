@@ -1,0 +1,31 @@
+{
+  "name": "prime",
+  "version": "1.0.0",
+  "description": "Prime Autonomous AI Platform: Unified engineering harness combining 69 specialist agents, TDD & Superpowers discipline, dual-axis review, browser automation, and 3,000+ curated skills into one intelligent entry point.",
+  "author": {
+    "name": "Prime AI Engineering",
+    "url": "https://github.com/prime-agentic/prime"
+  },
+  "homepage": "https://prime.agentic",
+  "repository": "https://github.com/prime-agentic/prime",
+  "license": "MIT",
+  "keywords": [
+    "prime",
+    "claude-code",
+    "agents",
+    "skills",
+    "tdd",
+    "code-review",
+    "architecture",
+    "browser-automation",
+    "security",
+    "workflow"
+  ],
+  "commands": [
+    "./commands/"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "mcpServers": {}
+}

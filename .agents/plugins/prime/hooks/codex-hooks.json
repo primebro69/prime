@@ -1,0 +1,17 @@
+{
+  "description": "Prime native Codex session hooks.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${PLUGIN_ROOT}/hooks/session-start.ps1\""
+          }
+        ],
+        "description": "Initialize Prime workspace and specialist agent catalog in Codex"
+      }
+    ]
+  }
+}

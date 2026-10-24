@@ -1,0 +1,38 @@
+{
+  "name": "prime",
+  "version": "1.0.0",
+  "description": "Unified autonomous agent harness, TDD methodology, and 3,000+ skills ecosystem. Single entry point: /prime",
+  "author": {
+    "name": "Prime AI Systems"
+  },
+  "license": "MIT",
+  "keywords": [
+    "prime",
+    "autonomous-agent",
+    "tdd",
+    "code-review",
+    "architecture",
+    "superpowers",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "hooks": {},
+  "interface": {
+    "displayName": "Prime",
+    "shortDescription": "Unified autonomous agent harness and multi-specialist engineering engine",
+    "longDescription": "Prime unifies the best AI engineering frameworks (Superpowers, ECC, Claude-Mem, Agent Peer Review, AAS) into a single master slash command: /prime. Access architectural design, TDD workflows, peer reviews, browser automation, and 3,000+ skills.",
+    "developerName": "Prime AI Systems",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "/prime Analyze this project, identify its problems, and implement the necessary fixes.",
+      "/prime Build a comprehensive test suite for this module using TDD.",
+      "/prime Run a dual-axis code review on the latest changes."
+    ],
+    "brandColor": "#00F0FF"
+  }
+}

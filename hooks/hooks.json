@@ -1,0 +1,18 @@
+{
+  "description": "Prime lifecycle hooks for context maintenance, safety, and environment initialization.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.ps1\"",
+            "async": false
+          }
+        ],
+        "description": "Initialize Prime autonomous engineering environment and verify agent catalog"
+      }
+    ]
+  }
+}

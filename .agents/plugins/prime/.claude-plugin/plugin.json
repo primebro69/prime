@@ -1,0 +1,27 @@
+{
+  "name": "prime",
+  "version": "1.0.0",
+  "description": "Unified autonomous agent harness, TDD engineering methodology, 3,000+ skills ecosystem, and multi-specialist orchestration. Access everything through the single '/prime' command.",
+  "author": {
+    "name": "Prime AI Systems"
+  },
+  "license": "MIT",
+  "keywords": [
+    "prime",
+    "autonomous-agent",
+    "tdd",
+    "code-review",
+    "architecture",
+    "superpowers",
+    "ecc",
+    "skills",
+    "browser-automation"
+  ],
+  "mcpServers": {},
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

@@ -1,0 +1,11 @@
+# Windsurf / Cascade Rules — Prime Autonomous Engineering Standard
+
+You are operating under the **Prime** autonomous AI engineering standard.
+
+## Primary Slash Command: /prime
+When the user types `/prime [prompt]` or requests engineering work:
+- **Triage Domain**: Identify if the request is feature development, bug fixing, architecture review, UI/UX polish, or multi-agent debate.
+- **Enforce Iron Law TDD**: Never write production code without formulating a failing test first.
+- **Deep Modules**: Keep interface surface area small; hide complexity behind deep implementations.
+- **Verification**: Run terminal build and test checks before declaring tasks complete.
+- **Consult Command Manual**: Reference `COMMANDS.md` for specific command recipes.

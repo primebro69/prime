@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "computedHash": "a8853bcca9385c4998ee2bfbe4139b52b51596dc2f45414a9ee712e3c0827cfd"
+    },
+    "awesome-plugins-guide": {
+      "source": "prime/awesome-plugins-guide",
+      "sourceType": "local",
+      "skillPath": "skills/awesome-plugins-guide/SKILL.md",
+      "computedHash": "0bbd25737bae0b259f016197617bbdb08ae3ed84a15321d311a44081ed29a203"
+    },
+    "caveman": {
+      "source": "prime/caveman",
+      "sourceType": "local",
+      "skillPath": "skills/caveman/SKILL.md",
+      "computedHash": "5cce686aea27824bb237da8c27d0a10cc92365c99938701aa725aa66838a7f7d"
+    },
+    "code-review": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/code-review/SKILL.md",
+      "computedHash": "b4f17857c85ca60af1df7d0b623dd03c2a48419f6123e714f3d9748ca744a1bf"
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
+      "computedHash": "caea3cb8a8281ff829fd1a2b985044e77601b62f301adf43f689ccfc74c15f6f"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "d6cb30212b3b19f531378574784af1da09928b2e5078f299eaeaedd50191a4af"
+    },
+    "prime": {
+      "source": "prime/prime",
+      "sourceType": "local",
+      "skillPath": "skills/prime/SKILL.md",
+      "computedHash": "fe838e9feba9e6db9731475a34207cf7272f41b959acc2c3167e8f81f4752321"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+name: Prime Platform Validation Suite
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    name: Run Platform Verification Suite
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Prime Comprehensive Validation Suite (58 Checks)
+        shell: pwsh
+        run: |
+          powershell -ExecutionPolicy Bypass -File scripts/prime-validate.ps1
