@@ -3,7 +3,8 @@
 
 [CmdletBinding()]
 param(
-    [string]$RepoUrl = "",
+    [string]$RepoUrl = "https://github.com/nazmulhasina228-ux/prime.git",
+    [string]$Token = "",
     [string]$CommitMessage = "feat: release Prime Autonomous AI Platform v1.0.0 (82 Specialist Agents, Deliberation Engine, Universal Adapters)"
 )
 
@@ -72,12 +73,16 @@ if ($status) {
 Write-Host ""
 Write-Host "----------------------------------------------------------" -ForegroundColor DarkGray
 if ($RepoUrl) {
-    Write-Host "Setting remote origin to: $RepoUrl" -ForegroundColor Cyan
+    $targetUrl = $RepoUrl
+    if ($Token) {
+        $targetUrl = $RepoUrl -replace "https://", "https://$($Token)@"
+    }
+    Write-Host "Setting remote origin..." -ForegroundColor Cyan
     $existingRemote = & $gitPath remote get-url origin 2>$null
     if ($existingRemote) {
-        & $gitPath remote set-url origin $RepoUrl
+        & $gitPath remote set-url origin $targetUrl
     } else {
-        & $gitPath remote add origin $RepoUrl
+        & $gitPath remote add origin $targetUrl
     }
     Write-Host "Pushing to origin main..." -ForegroundColor Cyan
     & $gitPath push -u origin main
