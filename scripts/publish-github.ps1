@@ -75,7 +75,8 @@ Write-Host "----------------------------------------------------------" -Foregro
 if ($RepoUrl) {
     $targetUrl = $RepoUrl
     if ($Token) {
-        $targetUrl = $RepoUrl -replace "https://", "https://$($Token)@"
+        $prefix = "https://" + $Token + "@"
+        $targetUrl = $RepoUrl.Replace("https://", $prefix)
     }
     Write-Host "Setting remote origin..." -ForegroundColor Cyan
     $existingRemote = & $gitPath remote get-url origin 2>$null
@@ -90,13 +91,10 @@ if ($RepoUrl) {
 } else {
     Write-Host "NEXT STEPS TO PUBLISH TO YOUR GITHUB ACCOUNT:" -ForegroundColor Yellow
     Write-Host "1. Go to https://github.com/new and create a new repository (e.g. 'prime')" -ForegroundColor White
-    Write-Host "2. Copy the repository URL (e.g. https://github.com/<USERNAME>/prime.git)" -ForegroundColor White
+    Write-Host "2. Copy the repository URL (e.g. https://github.com/primebro69/prime.git)" -ForegroundColor White
     Write-Host "3. Run this command in your terminal:" -ForegroundColor White
-    Write-Host "   git remote add origin https://github.com/<USERNAME>/prime.git" -ForegroundColor Cyan
+    Write-Host "   git remote add origin https://github.com/primebro69/prime.git" -ForegroundColor Cyan
     Write-Host "   git push -u origin main" -ForegroundColor Cyan
-    Write-Host ""
-    Write-Host "Or re-run this script with the -RepoUrl parameter:" -ForegroundColor Gray
-    Write-Host "   .\scripts\publish-github.ps1 -RepoUrl 'https://github.com/<USERNAME>/prime.git'" -ForegroundColor Gray
 }
 Write-Host "----------------------------------------------------------" -ForegroundColor DarkGray
 Write-Host ""
