@@ -1,0 +1,14 @@
+{
+  "name": "codex-peer-review",
+  "version": "2.1.1",
+  "description": "Symmetric two-AI peer review using OpenAI Codex CLI. Both AIs review independently in a blind pass, then debate per-issue with terminal states until convergence. Catches significantly more issues than single-pass validation.",
+  "author": {
+    "name": "jcputney",
+    "url": "https://github.com/jcputney"
+  },
+  "repository": "https://github.com/jcputney/agent-peer-review",
+  "license": "MIT",
+  "keywords": ["peer-review", "code-review", "validation", "codex", "ai-collaboration"],
+  "commands": ["./commands/codex-peer-review.md"],
+  "agents": ["./agents/codex-peer-reviewer.md"]
+}

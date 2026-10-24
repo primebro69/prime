@@ -1,0 +1,53 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  app:
+    name: app
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: ui/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ui
+
+      - name: Run typecheck
+        run: npm run typecheck
+        working-directory: ui
+
+      - name: Run linter
+        run: npm run lint
+        working-directory: ui
+
+      - name: Run unit tests
+        run: npm run test:unit
+        working-directory: ui
+
+      - name: Run production build
+        run: npm run build
+        working-directory: ui
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+        working-directory: ui
+
+      - name: Run browser e2e tests
+        run: npm run test:e2e
+        working-directory: ui

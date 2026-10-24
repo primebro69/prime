@@ -1,0 +1,59 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "timezone": "Europe/Athens",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 9am on the first day of the month"]
+  },
+  "packageRules": [
+    {
+      "description": "Keep framework updates isolated for focused review.",
+      "matchPackageNames": ["next", "react", "react-dom"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "schedule": ["after 10am and before 11am on Monday"],
+      "groupName": "framework dependency updates",
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "description": "Group lower-risk type and tooling updates.",
+      "matchPackageNames": ["@biomejs/biome", "@next/bundle-analyzer", "@octokit/openapi-types", "@playwright/test", "@tailwindcss/postcss", "husky", "tailwindcss", "typescript"],
+      "matchPackagePatterns": ["^@types/"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "schedule": ["after 2pm and before 3pm on Wednesday"],
+      "groupName": "tooling and type dependency updates",
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Group app runtime minor and patch updates apart from framework packages.",
+      "matchPackageNames": [
+        "@radix-ui/react-avatar",
+        "@radix-ui/react-dropdown-menu",
+        "@radix-ui/react-icons",
+        "@radix-ui/react-select",
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "clsx",
+        "fuse.js",
+        "lucide-react",
+        "next-themes",
+        "recharts",
+        "tailwind-merge",
+        "use-debounce",
+        "zod"
+      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "schedule": ["after 4pm and before 5pm on Friday"],
+      "groupName": "runtime dependency updates",
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Keep non-framework major updates separate from routine groups.",
+      "matchUpdateTypes": ["major"],
+      "excludePackageNames": ["next", "react", "react-dom"],
+      "schedule": ["after 9am and before 10am on Tuesday"],
+      "groupName": "major dependency updates",
+      "minimumReleaseAge": "7 days"
+    }
+  ]
+}

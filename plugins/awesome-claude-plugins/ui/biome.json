@@ -1,0 +1,156 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.11/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": ["**", "!.next", "!build", "!next-env.d.ts", "!out", "!src/data"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 140,
+    "attributePosition": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "expand": "auto",
+    "useEditorconfig": true,
+    "includes": ["**", "!.next", "!build", "!next-env.d.ts", "!out", "!src/data/**"]
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "project": "recommended",
+      "next": "recommended",
+      "react": "recommended",
+      "test": "recommended"
+    },
+    "rules": {
+      "preset": "recommended",
+      "a11y": {
+        "noAriaUnsupportedElements": "warn",
+        "noAmbiguousAnchorText": "warn",
+        "useAltText": "warn",
+        "useAriaPropsForRole": "warn",
+        "useAriaPropsSupportedByRole": "warn",
+        "useValidAriaProps": "warn",
+        "useValidAriaValues": "warn"
+      },
+      "complexity": {
+        "noUselessStringConcat": "error",
+        "noVoid": "error",
+        "noRedundantDefaultExport": "error",
+        "useSimplifiedLogicExpression": "error",
+        "useArrayFind": "error"
+      },
+      "correctness": {
+        "noChildrenProp": "error",
+        "noGlobalDirnameFilename": "error",
+        "noDuplicateAttributes": "warn",
+        "noNestedComponentDefinitions": "error",
+        "noReactPropAssignments": "error",
+        "noRenderReturnValue": "error",
+        "noUnusedInstantiation": "error",
+        "noUndeclaredDependencies": "error",
+        "noUnusedVariables": "error",
+        "useExhaustiveDependencies": "warn",
+        "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "error"
+      },
+      "nursery": {
+        "useSortedClasses": "error",
+        "noUndeclaredClasses": "off",
+        "noUnusedClasses": "off"
+      },
+      "performance": {
+        "noImgElement": "error",
+        "noUnwantedPolyfillio": "warn",
+        "useGoogleFontPreconnect": "warn",
+        "useTopLevelRegex": "error"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "error",
+        "noDangerouslySetInnerHtmlWithChildren": "error",
+        "noScriptUrl": "warn"
+      },
+      "style": {
+        "noCommonJs": "error",
+        "noHeadElement": "warn",
+        "noNamespace": "error",
+        "useArrayLiterals": "error",
+        "useAsConstAssertion": "error",
+        "useConst": "error",
+        "useErrorCause": "warn",
+        "useFilenamingConvention": "error",
+        "useNamingConvention": "error",
+        "useObjectSpread": "error",
+        "useReactFunctionComponents": "warn",
+        "useSelfClosingElements": "error",
+        "noMultilineString": "error"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noCommentText": "error",
+        "noDocumentImportInPage": "error",
+        "noDuplicateJsxProps": "error",
+        "noExplicitAny": "error",
+        "noExtraNonNullAssertion": "error",
+        "noHeadImportInDocument": "error",
+        "noMisleadingInstantiator": "error",
+        "noMisplacedAssertion": "error",
+        "noNestedPromises": "error",
+        "noNonNullAssertedOptionalChain": "error",
+        "noProto": "warn",
+        "noUnassignedVariables": "error",
+        "noUnsafeDeclarationMerging": "error",
+        "noVar": "error",
+        "useGoogleFontDisplay": "warn",
+        "useNamespaceKeyword": "error",
+        "noDuplicatedSpreadProps": "error",
+        "noLeakedRender": "error",
+        "useArraySortCompare": "error"
+      }
+    },
+    "includes": ["**", "!.next", "!build", "!next-env.d.ts", "!out", "!src/data/**"]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    },
+    "globals": []
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "sortBareImports": true
+          }
+        },
+        "useSortedAttributes": "on",
+        "useSortedProperties": "on"
+      }
+    }
+  }
+}
